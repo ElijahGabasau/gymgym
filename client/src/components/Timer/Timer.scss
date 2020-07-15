@@ -1,0 +1,95 @@
+.timer{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem;
+    margin-top: 1rem;
+
+    &__display{
+        width: 12rem;
+        height: 12rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 100%;
+
+        *{
+            cursor: pointer; 
+        }
+    }
+
+    &__display--play{
+        background: url('./play.png') #52884bd5 no-repeat 60% 50%;
+        &:hover{
+            cursor: pointer;
+            background-color: #52884B;
+        }
+        &:active{
+            background-color: #52884B;
+        }
+    }
+
+    &__display--pause{
+        background: url('./pause.png') #e041a6b9 no-repeat 50% 50%;
+        &:hover{
+            cursor: pointer;
+            background-color: #e041a6ee;
+        }
+        &:active{
+            background-color: #e041a6ee;
+        }
+    }
+
+    &__display--blank{
+        background: #e041a6b9;
+        &:hover{
+            cursor: pointer;
+            background-color: #e041a6ee;
+        }
+        &:active{
+            background-color: #e041a6ee;
+        }
+    }
+
+    &__counter {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 2.5rem;
+        height: 2.5rem;
+
+        background: #6e6e70;
+        border: 1px solid #ece5e218;
+        border-radius: 100%;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #8c8c8f;
+        }
+
+        &:active{
+            background-color: #8c8c8f;
+        }
+    }
+
+    &__button--reset{
+        position: absolute;
+        top: 0;
+        right: -15%;
+    }
+
+    &__reset {
+        width: 1.8rem;
+    }
+}

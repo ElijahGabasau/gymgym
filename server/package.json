@@ -1,0 +1,16 @@
+{
+  "name": "gymgym",
+  "version": "1.0.0",
+  "description": "Web application for composing a workout programme",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elijah Gabasau",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3"
+  }
+}

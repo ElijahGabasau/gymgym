@@ -1,0 +1,23 @@
+.render-difficulty{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+    &__filled{
+      border: 2px solid #52884B;
+      border-radius: 100%;
+      margin-left: 0.1rem;
+  
+      width: 1rem;
+      height: 1rem;
+    }
+  
+    &__blank{
+      border: 2px solid #ece5e262;
+      border-radius: 100%;
+      margin-left: 0.1rem;
+  
+      width: 1rem;
+      height: 1rem;
+    }
+  }

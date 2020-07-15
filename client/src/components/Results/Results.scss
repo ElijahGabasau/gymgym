@@ -1,0 +1,64 @@
+.gym-results{
+    
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 0.3rem 0.7rem;
+    }
+
+    &__desktop{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.results-button{
+    margin: 0.5rem 0;
+
+    &__begin{
+        background-color: #e041a6a8;
+        &:hover{
+            background-color: #e041a6dc;  
+        }
+    }
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+
+    &__button{
+        width: 8rem;
+        margin: 0;
+        padding: 0.5rem 0.2rem;
+
+        font-size: 1rem;
+    }
+}
+
+.changeButton{
+    margin: 1rem;
+    width: 94%;
+}
+
+@media(min-width: 950px){
+    .gym-results{
+        padding: 0 18%;
+
+        &__menu{
+            margin: 0 1.8rem;
+        }
+
+        &__desktop{
+            display: block;
+            visibility: visible;
+        }
+
+        &__mobile{
+            display: none;
+            visibility: hidden;
+        }
+    }
+}

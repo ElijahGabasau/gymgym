@@ -1,0 +1,117 @@
+.gym-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+
+    h2{
+        color: #52884B;
+        font-size: 2rem;
+    }
+
+
+    button{
+        border: 1px solid #52884B;
+    }
+}
+
+.form{
+    padding: 2rem 0;
+    width: 100%;
+
+    &__label{
+        display: inline-block;
+        padding: 9px 0;
+        width: 100%;
+
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    &__input{
+        background-color: #28292F;
+        border: 1px solid #52884B;
+        border-radius: 4px;
+
+        padding: 9px 18px;
+        width: 100%;
+
+        font-size: 18px;
+
+        color: #ece5e2;
+
+        &:hover{
+            background: #484a55; 
+        }
+    }
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.option{
+    width: 300px;
+    height: 60px;
+
+    &__apperance{
+        top: -80%;
+        left: -15%;
+    }
+
+    &__shadow{
+        top: -70%;
+        left: -12%;
+    }
+}
+
+
+.checkbox{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    div {
+        margin: 0.2rem 0;
+    }
+}
+
+@media(min-width: 800px){
+    .gym-option{
+        padding: 0 20%;
+    }
+
+    .form{
+        &__desktop{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__input{
+            width: 90%;
+        }
+
+        div{
+            margin-top: 1rem;
+        }
+    }
+
+    .checkbox{
+        padding: 4rem 0;
+        padding-bottom: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        div{
+            margin: 0.4rem 0;
+        }
+    }
+}
+
+@media(min-width: 1000px){
+    .checkbox{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
