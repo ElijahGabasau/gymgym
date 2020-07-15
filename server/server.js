@@ -92,8 +92,8 @@ app.post('/', (req, res) => {
 
         let additional = [];
 
-        if(correspondData.length > 30){
-            for(let i = 0; i < 50; i++){
+        if(correspondData.length > 25){
+            for(let i = 0; i < 25; i++){
                 const random = Math.floor(Math.random() * correspondData.length);
                 const chosen = correspondData.splice(random, 1);
 

@@ -12,6 +12,11 @@
     border: 1px solid #ece5e2;
     border-radius: 5px;
 
+    &__desktop{
+        display: none;
+        visibility: hidden;
+    }
+
     &__checked{
         border: 1px solid #52884B;
     }
@@ -28,6 +33,8 @@
     &__title{
         font-size: 1rem;
         font-weight: 700;
+
+        max-width: 14rem;
     }
 
     &__row{
@@ -155,21 +162,20 @@
         border-bottom: 10px solid #52884B;
         border-right: 10px solid #52884B;
     }
-
-    &__desktop{
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        z-index: 100;
-
-        width: 100%;
-        height: 100%;
-    }
 }
 
 @media(min-width: 840px){
     .preview{
         min-width: 15rem;
+
+        &__desktop{
+            display: block;
+            visibility: visible;
+        }
+
+        &__mobile{
+            display: none;
+            visibility: hidden;
+        }
     }
 }

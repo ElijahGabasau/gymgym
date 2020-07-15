@@ -49,6 +49,7 @@ class RenderPreview extends React.Component {
 
         for (let i = 0; i < this.props.data.length; i++ ){
             previewRender.push(<Preview 
+                key={this.props.data[i].id + 'prev'}
                 data={this.props.data[i]} 
                 isCheckMode={this.state.isCheckMode} 
                 activateCheckMode={this.activateCheckMode} 
